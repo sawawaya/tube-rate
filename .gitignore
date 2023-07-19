@@ -1,0 +1,7 @@
+tmp
+*.csv
+.venv
+**.ipynb
+.python-version
+.DS_Store
+__pycache__

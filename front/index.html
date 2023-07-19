@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>つべれーと</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/e77205ca1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-center">
+            <img src="images/icon.png" alt="つべれーとのロゴ">
+            つべれーと
+        </div>
+    </header>
+
+    <section class="top">
+        <div class="note">
+            <dl>
+                <dt><i class="fa-solid fa-book"></i>&nbsp;ここで調べられるもの&nbsp;<i class="fa-solid fa-book"></i></dt>
+                <dd>・&nbsp;最も再生回数の多い動画</dd>
+                <dd>・&nbsp;最も高評価数の多い動画</dd>
+                <dd>・&nbsp;最も見られていない動画</dd>
+            </dl>
+        </div>
+        <div class="search">
+            <form action="" method="post">
+                <label for="channel-search">
+                    <input type="url" name="channelUrl" id="channel-search" placeholder="調べたいチャンネルの動画URL">
+                </label>
+                <label for="search-button">
+                    <button type="submit" name="action" value="send" id="search-button" alt="送信ボタン"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </label>
+            </form>
+        </div>
+    </section>
+    
+    <section class="result">
+        <h3><span class="channel-name"></span>&nbsp;さんの</h3>
+        <div class="most-viewed">
+            <h1>最も再生回数の多い動画</h1>
+            <div class="most-viewed-video">
+                <iframe src="" frameborder="0"></iframe>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/F9yaKc_b6dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
+            <div class="most-viewed-title">
+                <!-- 【実写📷】誕生日プレゼント大開封祭🎁あとちょっと？【#ksonONAIR 】 -->
+            </div>
+        </div>
+        <div class="highest-good-rate">
+            <h1>最も高評価数の多い動画</h1>
+            <div class="highest-good-rate-video">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+            <div class="highest-good-rate-title">
+
+            </div>
+        </div>
+        <div class="least-viewed">
+            <h1>最も見られていない動画</h1>
+            <div class="least-viewed-video">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+            <div class="least-viewed-title">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            &copy;2023 TubeRate
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
